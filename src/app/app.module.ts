@@ -11,7 +11,8 @@ import { AppComponent } from './app.component';
 import {IonicStorageModule} from '@ionic/storage';
 import { AngularFireModule } from '@angular/fire';
 import {AngularFireAuthModule} from '@angular/fire/auth';
-
+import {Network} from '@ionic-natve/Network/ngx;
+import {Toast} from @'ionic-native/Toast/ngx;
 import {AngularFireDatabaseModule} from '@angular/fire/database';
 
 import {firebaseConfig} from '../config';
@@ -46,6 +47,8 @@ import { MessageModalPageModule } from './message-modal/message-modal.module';
     StatusBar,
     SplashScreen,
     GooglePlus,
+    Network,
+    Toast,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent],
