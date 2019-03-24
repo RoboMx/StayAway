@@ -90,11 +90,23 @@ export class DatabaseService {
   }
 
   async messageSpamCount(list, key): Promise<void> {
-       await this.messageURL.update(key, list);
+       await this.messageURL.update(key, list).then((data) => {
+          this.presentAlertSuccess();
+       }).catch((error) => {
+          this.presentAlertError();
+       });
   }
 
   async messageNonSpamCount(list, key): Promise<void> {
-       await this.messageURL.update(key, list);
+        try {
+       await this.messageURL.update(key, list).then((data) => {
+          this.presentAlertSuccess();
+      }).catch((error) => {
+          this.presentAlertError();
+      });
+    } catch {
+      console.log("erro")
+    }
   }
 
   presentToast(message) {
