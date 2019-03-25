@@ -9,6 +9,14 @@
 ## Technology Stack:
   * Ionic 4
   * Firebase
+  
+## Google Play Store:
+<a href="https://play.google.com/store/apps/details?id=tech.robomx.stayaway">Download app</a>
+
+## Screenshots:
+<img src="images/1.png" width="300px" height="500px"/><img src="images/2.png" width="300px" height="500px"/>
+<img src="images/3.png" width="300px" height="500px"/>
+<img src="images/4.png" width="300px" height="500px"/>
 
 ## How to run project:
   1) Create a new project on Firebase and follow the steps below.<br/>
